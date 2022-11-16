@@ -1,0 +1,61 @@
+$sizes: (
+    4: 4,
+    8: 8,
+    10: 10,
+    12: 12,
+    14: 14,
+    16: 16,
+    18: 18,
+    20: 20,
+    22: 22,
+    24: 24,
+    28: 28,
+    30: 30,
+    32: 32,
+    40: 40,
+    48: 48,
+    50: 50
+);
+
+@each $space-size, $size in $sizes {
+    .m-t--#{$space-size} {
+        margin-top: #{$size}px;
+    }
+
+    .m-r--#{$size} {
+        margin-right: #{$size}px;
+    }
+
+    .m-b--#{$size} {
+        margin-bottom: #{$size}px;
+    }
+
+    .m-l--#{$size} {
+        margin-left: #{$size}px;
+    }
+
+    .p-t--#{$size} {
+        padding-top: #{$size}px;
+    }
+
+    .p-r--#{$size} {
+        padding-right: #{$size}px;
+    }
+
+    .p-b--#{$size} {
+        padding-bottom: #{$size}px;
+    }
+
+    .p-l--#{$size} {
+        padding-left: #{$size}px;
+    }
+
+    .m--#{$size} {
+        margin: #{$size}px;
+    }
+
+    .p--#{$size} {
+        padding: #{$size}px;
+    }
+
+}

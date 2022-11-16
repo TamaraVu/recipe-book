@@ -1,0 +1,22 @@
+<div class="recipe-detail">
+  <div class="recipe-detail-header">
+    <p>Recipe</p>
+  </div>
+  <div class="recipe-name">
+    <p>{{ recipe.name }}</p>
+  </div>
+
+  <div class="buttons">
+    <button class="read-more-button m-r--16">Edit</button>
+    <button class="read-more-button" (click)="deleteRecipe()">Delete</button>
+  </div>
+  <div class="recipe-content">
+    <div class="image-wrapper">
+      <img [src]="recipe.imagePath" alt="{{ recipe.name }}" />
+    </div>
+    <div class="description">
+      <h3>Directions</h3>
+      <p>{{ recipe.description }}</p>
+    </div>
+  </div>
+</div>

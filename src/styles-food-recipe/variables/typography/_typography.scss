@@ -1,0 +1,40 @@
+:root {
+  --font-3xs: 12px;
+  --font-2xs: 14px;
+  --font-xs: 16px;
+  --font-s: 18px;
+  --font-m: 20px;
+  --font-l: 22px;
+  --font-xl: 24px;
+  --font-2xl: 26px;
+  --font-3xl: 30px;
+  --font-4xl: 32px;
+
+  --lineheight-2xs: 16px;
+  --lineheight-xs: 18px;
+  --lineheight-s: 22px;
+  --lineheight-m: 24px;
+  --lineheight-l: 29px;
+  --lineheight-xl: 30px;
+  --lineheight-2xl: 32px;
+  --lineheight-3xl: 40px;
+  --lineheight-4xl: 44px;
+
+  --font-regular: "OpenSans Regular";
+  --font-medium: "OpenSans Medium";
+  --font-bold: "OpenSans Bold";
+
+  --weight-s: 400;
+  --weight-m: 500;
+  --weight-l: 600;
+}
+
+.read-more-button {
+  background-color: #bd1313fa;
+  color: white;
+  border: none;
+  font-size: var(--font-xs);
+  padding: 16px;
+  cursor: pointer;
+}
+

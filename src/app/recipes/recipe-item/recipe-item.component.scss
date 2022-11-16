@@ -1,0 +1,21 @@
+
+.recipe-item {
+  cursor: pointer;
+}
+
+.image-wrapper {
+  height: 300px;
+  width: 300px;
+  border-bottom: 3px solid rgba(189, 19, 19, 0.9803921569);
+  img {
+    height: 100%;
+    max-width: 100%;
+  }
+}
+
+.recipe-name {
+  text-align: center;
+  font-style: italic;
+  padding-top: 6px;
+}
+
