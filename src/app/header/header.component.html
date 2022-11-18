@@ -1,4 +1,4 @@
-<div class="sidemenu">
+<!-- <div class="sidemenu">
   <div class="sidemenu-wrapper">
     <div class="logo">
       <img src="../../assets/images/Cooking-Recipe-PNG-Images.png" />
@@ -16,4 +16,34 @@
       </ul>
     </div>
   </div>
+</div> -->
+
+<div class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed' : ''">
+  <div class="logo-container">
+    <button class="logo" routerLink="/home">
+      <img src="../../assets/images/Cooking-Recipe-PNG-Images.png" />
+    </button>
+    <button class="button-chevron" (click)="openSidenav()" *ngIf="!collapsed">
+      <span class="material-icons-outlined chevron-right"> chevron_right </span>
+    </button>
+    <button class="button-chevron" (click)="closeSidenav()" *ngIf="collapsed">
+      <span class="material-icons-outlined chevron-left"> chevron_left </span>
+    </button>
+  </div>
+
+  <ul class="sidenav-nav">
+    <li class="sidenav-nav-item" *ngFor="let data of navData">
+      <a
+        href=""
+        class="sidenav-nav-link"
+        [routerLink]="data.routerLink"
+        (click)="closeSidenav()"
+      >
+        <span class="material-icons-outlined"> {{ data.materialIcon }} </span>
+        <span class="sidenav-link-text" *ngIf="collapsed">{{
+          data.label
+        }}</span>
+      </a>
+    </li>
+  </ul>
 </div>

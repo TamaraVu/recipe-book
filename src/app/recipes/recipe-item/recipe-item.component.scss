@@ -7,9 +7,16 @@
   height: 300px;
   width: 300px;
   border-bottom: 3px solid rgba(189, 19, 19, 0.9803921569);
+
+  @media screen and (max-width: 560px) {
+   width: 100%;
+  height: unset;
+   }
   img {
     height: 100%;
-    max-width: 100%;
+    width: 100%;
+
+
   }
 }
 
