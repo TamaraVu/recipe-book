@@ -1,6 +1,6 @@
 <div class="recipe-edit-wrapper">
   <div class="recipe-edit-header">
-    <h1>Please fill up all fields for submit a recipe</h1>
+    <h2>Please fill up all fields for submit a recipe</h2>
   </div>
   <form [formGroup]="recipeForm" (ngSubmit)="onSubmit()">
     <div class="form-group">
@@ -11,14 +11,6 @@
         formControlName="name"
         class="form-control"
       />
-      <!-- <p
-        *ngIf="
-          recipeForm.get('name')?.hasError('required') &&
-          recipeForm.get('name')?.touched
-        "
-      >
-        Please enter recipe name
-      </p> -->
     </div>
     <div class="form-group">
       <label for="description">Recipe Description</label>

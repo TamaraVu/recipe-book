@@ -12,6 +12,8 @@ import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.com
 import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     RecipeItemComponent,
     RecipeDetailComponent,
     RecipeEditComponent,
+    AboutUsComponent,
+    ContactUsComponent,
   ],
   imports: [
     CommonModule,

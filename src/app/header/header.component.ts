@@ -15,7 +15,7 @@ export class HeaderComponent implements OnInit {
       label: 'Home',
     },
     {
-      routerLink: 'home',
+      routerLink: 'about-us',
       materialIcon: 'groups',
       label: 'About us',
     },

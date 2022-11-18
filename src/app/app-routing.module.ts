@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 import { HomeComponent } from './home/home.component';
 import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
 import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
@@ -25,6 +27,14 @@ const routes: Routes = [
     path: 'edit',
     component: RecipeEditComponent,
     pathMatch: 'full',
+  },
+  {
+    path: 'about-us',
+    component: AboutUsComponent,
+  },
+  {
+    path: 'contact',
+    component: ContactUsComponent,
   },
 ];
 

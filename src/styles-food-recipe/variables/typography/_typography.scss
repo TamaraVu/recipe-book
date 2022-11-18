@@ -38,3 +38,17 @@
   cursor: pointer;
 }
 
+.submit-button {
+  padding: 10px 38px;
+  font-size: var(--font-xs);
+  font-weight: var(--font-regular);
+  overflow: hidden;
+  background-color: #262626;
+  color: #ffffff;
+  text-transform: capitalize;
+  border: none;
+  cursor: pointer;
+  line-height: 30px;
+}
+
+
