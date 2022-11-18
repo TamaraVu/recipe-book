@@ -14,6 +14,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     RecipeEditComponent,
     AboutUsComponent,
     ContactUsComponent,
+    BlogComponent,
   ],
   imports: [
     CommonModule,

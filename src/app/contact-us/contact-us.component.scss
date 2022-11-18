@@ -1,6 +1,6 @@
 .contact-wrapper {
   display: flex;
-  padding: 48px;
+  padding: 48px 24px;
   gap: 24px;
 
   @media screen and (max-width: 980px) {
@@ -74,7 +74,7 @@
 }
 
 .contact-information-wrapper {
- width: 30%;
+ width: 40%;
  color: #9b9b9b;
 
  @media screen and (max-width: 980px) {

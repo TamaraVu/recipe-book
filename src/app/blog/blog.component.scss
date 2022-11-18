@@ -1,0 +1,11 @@
+.blog-header {
+  background: linear-gradient(0deg, rgba(41, 15, 30, 0.3), rgba(28, 22, 25, 0.3)),url('../../assets/images/recipe-background.jpg');
+  height: 210px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-3xl);
+  font-weight: var(--weight-l);
+  color: white;
+}
