@@ -1,52 +1,6 @@
-.sidemenu {
-  position: sticky;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  height: 100vh;
-  width: 300px;
-  background-color: lavenderblush;
-  .sidemenu-wrapper {
-    padding: 20px;
-  }
-  .logo {
-    width: 150px;
-    img {
-      width: 100%;
-    }
-  }
-}
-
-
-
-.menu-items-wrapper {
-  ul {
-    padding: 0;
-    li {
-      display: flex;
-      flex-direction: column;
-     a {
-      font-size: var(--font-s);
-      font-family: var(--font-medium);
-      padding: 10px 10px 10px 0;
-      color: #AA243c;
-      cursor: pointer;
-      text-decoration: none;
-      &.active {
-        border-bottom: 2px solid #AA243c;
-      }
-     }
-    }
-  }
-
-
-}
-
-// NEW
-
 .sidenav {
   background-color: lavenderblush;
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -147,10 +101,11 @@
       align-items: center;
       padding: 14px;
       height: 48px;
+      width: max-content;
       color: rgba(189, 19, 19, 0.9803921569);
       border-radius: 8px;
       text-decoration: none;
-      transition: all 0.5s ease;
+      transition: all 0.3s ease;
 
       @media screen and (max-width: 480px) {
         padding: 8px;

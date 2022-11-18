@@ -12,7 +12,6 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {}
 
   clickWorks() {
-    console.log('USLO');
     this.router.navigate(['/blog']);
   }
 }
