@@ -2,12 +2,17 @@
   <div class="recipe-detail-header">
     <p>Recipe</p>
   </div>
+  <div class="recipe-timestamp" *ngIf="recipe.timestamp">
+    {{ recipe.timestamp | date }}
+  </div>
   <div class="recipe-name">
     <p>{{ recipe.name }}</p>
   </div>
 
   <div class="buttons">
-    <button class="read-more-button m-r--16">Edit</button>
+    <button class="read-more-button m-r--16" (click)="editRecipe()">
+      Edit
+    </button>
     <button class="read-more-button" (click)="deleteRecipe()">Delete</button>
   </div>
   <div class="recipe-content">
@@ -15,8 +20,16 @@
       <img [src]="recipe.imagePath" alt="{{ recipe.name }}" />
     </div>
     <div class="description">
-      <h3>Directions</h3>
+      <h3>Description</h3>
       <p>{{ recipe.description }}</p>
     </div>
+  </div>
+  <div class="recipe-ingredients">
+    <h3>Ingredients</h3>
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let ingredient of recipe.ingredients">
+        {{ ingredient.ingredientName }} - {{ ingredient.ingredientAmount }}
+      </li>
+    </ul>
   </div>
 </div>

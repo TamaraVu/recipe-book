@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
+import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
 import { RecipesComponent } from './recipes/recipes.component';
 
 const routes: Routes = [
@@ -15,6 +16,15 @@ const routes: Routes = [
   {
     path: 'recipe/:id',
     component: RecipeDetailComponent,
+  },
+  {
+    path: 'recipe/:id/edit',
+    component: RecipeEditComponent,
+  },
+  {
+    path: 'edit',
+    component: RecipeEditComponent,
+    pathMatch: 'full',
   },
 ];
 

@@ -1,0 +1,91 @@
+.recipe-edit-wrapper {
+  width: 80%;
+  margin: 48px auto;
+  padding: 48px 24px;
+  box-shadow: 0px 0px 25px 0px rgb(255 125 95 / 30%);
+}
+
+.recipe-edit-header {
+    color: #161616;
+    font-weight: var(--weight-l);
+    line-height: 1.3;
+    margin-bottom: 20px
+}
+
+.form-group label {
+    font-size: var( --font-s);
+    color: #161616;
+    font-weight: var(--weight-l);
+    text-transform: capitalize;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-group .form-control {
+    display: block;
+    width: 100%;
+    padding: 4px 8px;
+    font-size: var(--font-xs);
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    min-height: 50px;
+    margin-bottom: 24px;
+}
+
+.submit-button {
+    padding: 10px 38px;
+    font-size: var(--font-xs);
+    font-weight: var(--font-regular);
+    overflow: hidden;
+    background-color: #262626;
+    color: #ffffff;
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+    line-height: 30px;
+}
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+  border: 1px solid red !important;
+}
+
+textarea {
+  resize: none;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+.add-ingredient-button {
+    background: #FF7D5F;
+    color: #ffffff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: var(--font-xs);
+}
+
+.ingredinet-fields {
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+
