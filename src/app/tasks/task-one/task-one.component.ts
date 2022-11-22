@@ -13,8 +13,7 @@ class Random {
 export class TaskOneComponent implements OnInit {
   values: Random[] = [];
   modified: Random[] = [];
-  count = 0;
-  flag = false;
+  bool = false;
   mostOccurred = -1;
   constructor() {}
 
@@ -24,9 +23,11 @@ export class TaskOneComponent implements OnInit {
 
   getNext() {
     this.randomArray();
-    this.mostOccurred = this.mostOccurrances();
+    this.mostOccurred = this.sort();
+
     let i = this.mostOccurred;
-    while (!this.flag) {
+
+    while (!this.bool) {
       i++;
       if (!this.values.some((v) => v.value == i)) {
         let newObj = {
@@ -34,15 +35,14 @@ export class TaskOneComponent implements OnInit {
           value: i,
         } as Random;
         this.modified.push(newObj);
-        this.flag = true;
+        this.bool = true;
       }
     }
   }
 
   randomArray() {
     this.mostOccurred = -1;
-    this.flag = false;
-    this.count = 0;
+    this.bool = false;
     this.values = [];
     for (let index = 1; index <= 6; index++) {
       this.values.push({ id: index, value: Math.floor(Math.random() * 5) });
@@ -50,14 +50,17 @@ export class TaskOneComponent implements OnInit {
     this.modified = [...this.values];
   }
 
-  mostOccurrances() {
+  sort() {
     let value = -1;
-    let count = 0;
-    this.values.forEach((v) => {
-      const valueCount = this.values.filter((x) => x.value == v.value).length;
-      if (valueCount > count || (v.value > value && valueCount == count)) {
+    const sortedArray = this.modified.sort((a, b) => {
+      return a.value - b.value;
+    });
+    sortedArray.forEach((v) => {
+      const valueDuplicate = sortedArray.filter(
+        (x) => x.value == v.value
+      ).length;
+      if (valueDuplicate > 1) {
         value = v.value;
-        count = valueCount;
       }
     });
     return value;
