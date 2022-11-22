@@ -1,0 +1,19 @@
+<div class="wrapper">
+  <div>
+    <span *ngFor="let item of values">
+      {{ item.value }}
+    </span>
+  </div>
+  <!-- <p>Most occurred value is: {{ mostOccurred }}</p> -->
+
+  <h3 class="m-t--12">Modified array:</h3>
+  <div>
+    <span
+      [ngClass]="{ added: i === modified.length - 1 }"
+      *ngFor="let item of modified; let i = index"
+    >
+      {{ item.value }}
+    </span>
+  </div>
+  <button class="submit-button" (click)="getNext()">Generate new array</button>
+</div>

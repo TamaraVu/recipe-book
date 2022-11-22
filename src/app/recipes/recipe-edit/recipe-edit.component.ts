@@ -40,13 +40,6 @@ export class RecipeEditComponent implements OnInit {
     let recipeImagePath = '';
     let recipeDescription = '';
     let recipeIngredients = new FormArray<any>([]);
-    // new FormArray([
-    //   new FormGroup({
-    //     ingredientName: new FormControl('', Validators.required),
-    //     ingredientAmount: new FormControl('', [Validators.required]),
-    //   }),
-    // ]);
-
     let timestamp = '';
 
     if (this.editMode) {

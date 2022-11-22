@@ -32,12 +32,22 @@ export class SidemenuComponent implements OnInit {
     {
       routerLink: 'contact',
       materialIcon: 'call',
-      label: 'Contact us',
+      label: 'Contact Us',
     },
     {
       routerLink: 'edit',
       materialIcon: 'add_circle',
       label: 'Add Recipe',
+    },
+    {
+      routerLink: 'task-one',
+      materialIcon: 'task',
+      label: 'Task One',
+    },
+    {
+      routerLink: 'task-two',
+      materialIcon: 'task',
+      label: 'Task Two',
     },
   ];
 

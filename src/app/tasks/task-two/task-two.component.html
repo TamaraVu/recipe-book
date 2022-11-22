@@ -1,0 +1,22 @@
+<div class="wrapper">
+  <div class="object">
+    <pre>{{ user | json }}</pre>
+  </div>
+
+  <div class="form">
+    <form [formGroup]="pathControl">
+      <input
+        class="form-control"
+        placeholder="address.street"
+        type="text"
+        formControlName="path"
+      />
+    </form>
+    <button (click)="lookup()" class="submit-button">Lookup</button>
+  </div>
+
+  <div *ngIf="lookupObject" class="result">
+    <span>Result:</span>
+    <pre>{{ lookupObject | json }}</pre>
+  </div>
+</div>

@@ -16,6 +16,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { BlogComponent } from './blog/blog.component';
 import { SidemenuComponent } from './sidemenu/sidemenu.component';
+import { TaskOneComponent } from './tasks/task-one/task-one.component';
+import { TaskTwoComponent } from './tasks/task-two/task-two.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { SidemenuComponent } from './sidemenu/sidemenu.component';
     AboutUsComponent,
     ContactUsComponent,
     BlogComponent,
+    TaskOneComponent,
+    TaskTwoComponent,
   ],
   imports: [
     CommonModule,

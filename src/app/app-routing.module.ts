@@ -7,6 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
 import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
 import { RecipesComponent } from './recipes/recipes.component';
+import { TaskOneComponent } from './tasks/task-one/task-one.component';
+import { TaskTwoComponent } from './tasks/task-two/task-two.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -40,6 +42,14 @@ const routes: Routes = [
   {
     path: 'contact',
     component: ContactUsComponent,
+  },
+  {
+    path: 'task-one',
+    component: TaskOneComponent,
+  },
+  {
+    path: 'task-two',
+    component: TaskTwoComponent,
   },
 ];
 
